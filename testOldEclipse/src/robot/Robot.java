@@ -30,19 +30,19 @@ public class Robot {
 			}
 			
 		});
-        arbyThread.start();
-
-        
-        
-        while (true) {
-        	if (Button.LEFT.isDown()) {
-        		home.goHome = true;
-        	}
-        	if (Button.ENTER.isDown()) {
-                arby.stop();
-                System.out.println("Trying to shut down");
-                System.exit(0);
-        	}
+		arbyThread.start();
+		
+		
+		
+		while (true) {
+			if (Button.LEFT.isDown()) {
+				home.goHome = true;
+			}
+			if (Button.ENTER.isDown()) {
+				arby.stop();
+				System.out.println("Trying to shut down");
+				System.exit(0);
+			}
 		}
 	}
 }
